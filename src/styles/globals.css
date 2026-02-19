@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+/* ── KC Tech Team Design System ─────────────────────────────────────────── */
+@theme {
+  /* Colors */
+  --color-bg-base:      #060B18;
+  --color-bg-surface:   #0D1428;
+  --color-bg-card:      #111C35;
+  --color-border:       #1E3A5F;
+  --color-text-primary: #F0F4FF;
+  --color-text-muted:   #7E9CC0;
+  --color-accent:       #00D4FF;
+  --color-accent-glow:  #00D4FF33;
+  --color-success:      #00FF88;
+
+  /* Fonts */
+  --font-heading: 'Syne', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+}
+
+/* ── CSS Custom Properties ───────────────────────────────────────────────── */
+:root {
+  --bg-base:      #060B18;
+  --bg-surface:   #0D1428;
+  --bg-card:      #111C35;
+  --border:       #1E3A5F;
+  --text-primary: #F0F4FF;
+  --text-muted:   #7E9CC0;
+  --accent:       #00D4FF;
+  --accent-glow:  #00D4FF33;
+  --success:      #00FF88;
+}
+
+/* ── Base Reset ──────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Custom Scrollbar ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ── Utility Classes ─────────────────────────────────────────────────────── */
+.font-heading {
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.glass {
+  background: rgba(17, 28, 53, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+.glow-accent {
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px var(--accent);
+}
+
+/* ── Animations ──────────────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1; }
+}
+
+@keyframes scan-line {
+  0%   { top: -10%; }
+  100% { top: 110%; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ── Section Gradient ────────────────────────────────────────────────────── */
+.section-bg {
+  background: linear-gradient(180deg, var(--bg-base) 0%, var(--bg-surface) 50%, var(--bg-base) 100%);
+}
+
+/* ── Gradient Text ───────────────────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #00D4FF 0%, #00FF88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
