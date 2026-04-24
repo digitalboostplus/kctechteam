@@ -74,7 +74,7 @@ export const localBusinessSchema = {
   description:
     'AI consulting, IT managed services, automation, cybersecurity, web development, and custom integrations firm headquartered in Kansas City, MO. Serving KC businesses and clients globally.',
   url: siteUrl,
-  telephone: '+1-816-555-0100',
+  telephone: '+1-913-399-1262',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '1000 Walnut St, Suite 1400',
@@ -120,6 +120,6 @@ export const organizationSchema = {
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'customer service',
-    email: 'hello@kctechteam.com',
+    email: 'help@kctechteam.com',
   },
 }

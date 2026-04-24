@@ -166,7 +166,7 @@ export default function VoiceAgent() {
                 </button>
               </form>
               <p className="text-center text-[10px] text-[#7E9CC0]/50 mt-2">
-                AI Assistant • KC Tech Team • (816) 555-0100
+                AI Assistant • KC Tech Team • (913) 399-1262
               </p>
             </div>
           </motion.div>

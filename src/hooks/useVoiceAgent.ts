@@ -146,7 +146,7 @@ export function useVoiceAgent(): UseVoiceAgentReturn {
           id: (Date.now() + 1).toString(),
           role: 'assistant',
           content:
-            "I'm sorry, I couldn't process that request. Please try again or contact KC Tech Team directly at (816) 555-0100.",
+            "I'm sorry, I couldn't process that request. Please try again or contact KC Tech Team directly at (913) 399-1262.",
           timestamp: new Date(),
         }
         setMessages((prev) => [...prev, errorMessage])

@@ -76,8 +76,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-[#7E9CC0] mb-1">Phone</p>
-                    <a href="tel:+18165550100" className="text-sm text-[#F0F4FF] hover:text-[#00D4FF] transition-colors font-medium">
-                      (816) 555-0100
+                    <a href="tel:+19133991262" className="text-sm text-[#F0F4FF] hover:text-[#00D4FF] transition-colors font-medium">
+                      (913) 399-1262
                     </a>
                   </div>
                 </div>
@@ -87,8 +87,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-[#7E9CC0] mb-1">Email</p>
-                    <a href="mailto:hello@kctechteam.com" className="text-sm text-[#F0F4FF] hover:text-[#00D4FF] transition-colors font-medium">
-                      hello@kctechteam.com
+                    <a href="mailto:help@kctechteam.com" className="text-sm text-[#F0F4FF] hover:text-[#00D4FF] transition-colors font-medium">
+                      help@kctechteam.com
                     </a>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function ContactPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(816) 555-0100"
+                      placeholder="(913) 399-1262"
                       className="w-full bg-[#111C35] border border-[#1E3A5F] rounded-xl px-4 py-3 text-sm text-[#F0F4FF] placeholder:text-[#7E9CC0]/40 focus:outline-none focus:border-[#00D4FF]/50 transition-colors"
                     />
                   </div>
